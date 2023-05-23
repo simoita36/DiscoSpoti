@@ -18,13 +18,13 @@ import express from 'express'
 // definiamo i parametri di configurazione del bot e del client Spotify
 const config = {
     prefix: '!', // prefisso per i comandi del bot
-    token: 'OTM3NDAwMTE1MzE0OTgyOTI0.Gz0Beb.NuT9fdVK5Y5wQm_gElai89jJCaJYjxmHEA_cvM',
-    spotifyClientId: '727151b59ce4445a949b1cb1ffc367f0',
-    spotifyClientSecret: '5b9fd81a32b64bd0a17395278c467cd8',
-    spotifyRedirectUri: 'http://localhost:3000/callback', // URI di reindirizzamento per l'autenticazione Spotify
+    token: 'DISCORD_TOKEN',
+    spotifyClientId: 'SPOTIFY_CLIENT_ID',
+    spotifyClientSecret: 'SPOTIFY_SECRET_CLIENT',
+    spotifyRedirectUri: 'http://localhost:8080/callback', // redirect URI that must be the same on spotify
 };
 const app = express()
-const port = 3000
+const port = 8080
 const serverName = 'Spotify Server'
 
 // istanziamo il client Spotify e il client Discord
